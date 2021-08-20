@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45pt"
+        android:id="@+id/bars"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@mipmap/ic_arrow_left_black"
+
+        >
+        <TextView
+            android:text="添加宝宝相册"
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20pt" />
+    </androidx.appcompat.widget.Toolbar>
+    <com.xzq.module_base.views.DrawableTextView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/bian"
+        android:text="相册名称"
+        android:textSize="14pt"
+        android:textColor="@color/black"
+        android:drawablePadding="7pt"
+        app:dtv_drawableWidth="16pt"
+        app:dtv_drawableHeight="16pt"
+        android:layout_marginLeft="30pt"
+        android:layout_marginTop="45pt"
+        />
+    <EditText
+        android:id="@+id/nanming"
+        android:layout_width="300pt"
+        android:layout_height="27pt"
+        android:background="@drawable/edfi_bg"
+        android:layout_gravity="center_horizontal"
+        android:hint="请输入自己的名字"
+        android:layout_marginTop="16pt"
+        android:textSize="12pt"
+        android:paddingLeft="15pt"
+
+        />
+    <com.xzq.module_base.views.DrawableTextView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/bian"
+        android:text="相册描述"
+        android:textSize="14pt"
+        android:textColor="@color/black"
+        android:drawablePadding="7pt"
+        app:dtv_drawableWidth="14pt"
+        app:dtv_drawableHeight="14pt"
+        android:layout_marginLeft="30pt"
+        android:layout_marginTop="24pt"
+        />
+    <EditText
+        android:id="@+id/nvming"
+        android:layout_width="300pt"
+        android:layout_height="145pt"
+        android:background="@drawable/edfi_bg"
+        android:layout_gravity="center_horizontal"
+        android:hint="请输入描述"
+        android:gravity="top"
+        android:paddingTop="10pt"
+        android:layout_marginTop="16pt"
+        android:textSize="12pt"
+        android:paddingLeft="15pt"
+        />
+
+
+    <com.xzq.module_base.views.DrawableTextView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/tu"
+        android:text="选择背景"
+        android:textSize="14pt"
+        android:textColor="@color/black"
+        android:drawablePadding="7pt"
+        app:dtv_drawableWidth="14pt"
+        app:dtv_drawableHeight="14pt"
+        android:layout_marginLeft="30pt"
+        android:layout_marginTop="24pt"
+        />
+    <ImageView
+        android:layout_width="95pt"
+        android:layout_height="120pt"
+        android:background="@drawable/beitu"
+        android:id="@+id/beijingtu"
+        android:layout_marginTop="20pt"
+        android:layout_marginLeft="35pt"
+        />
+    <ImageView
+        android:id="@+id/qued"
+        android:layout_width="121pt"
+        android:layout_height="33pt"
+        android:background="@drawable/add"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68pt"
+        />
+</LinearLayout>

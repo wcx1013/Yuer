@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="304pt"
+    android:layout_height="115pt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4pt"
+    app:cardElevation="8pt"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="26pt">
+<!--    <com.xzq.module_base.utils.SlidingButtonView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        >-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            &lt;!&ndash;解绑按钮&ndash;&gt;-->
+<!--            <TextView-->
+
+<!--                android:id="@+id/tv_delete"-->
+<!--                android:layout_width="71pt"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_toRightOf="@+id/layout_content"-->
+<!--                android:background="#F88E8E"-->
+<!--                android:gravity="center"-->
+<!--                android:text="删除"-->
+<!--                android:textSize="25pt"-->
+<!--                android:textColor="@android:color/white"/>-->
+            <RelativeLayout
+                android:id="@+id/layout_content"
+                android:layout_width="233pt"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="13pt"
+                    android:layout_marginLeft="18pt"
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="测试"
+                    android:textColor="#464646"
+                    android:textSize="16pt" />
+                <LinearLayout
+                    android:layout_marginTop="13pt"
+                    android:layout_marginLeft="18pt"
+                    android:id="@+id/button"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/text">
+                    <TextView
+                        android:id="@+id/shengao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身高"
+                        android:textSize="16pt"
+                        android:textColor="#464646"
+                        />
+                    <TextView
+                        android:id="@+id/tizhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="体重"
+                        android:textSize="16pt"
+                        android:textColor="#464646"
+                        android:layout_marginLeft="58pt"
+                        />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/bmi"
+                   android:paddingBottom="13pt"
+                    android:layout_marginLeft="18pt"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BMI"
+                    android:textSize="16pt"
+                    android:textColor="#464646"
+                    />
+
+
+            </RelativeLayout>
+<!--        </RelativeLayout>-->
+<!--    </com.xzq.module_base.utils.SlidingButtonView>-->
+</androidx.cardview.widget.CardView>

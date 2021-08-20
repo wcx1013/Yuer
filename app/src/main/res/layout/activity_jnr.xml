@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/reax"
+    android:background="#FFFAFA">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45pt"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/fan"
+            android:layout_width="20pt"
+            android:layout_height="25pt"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_arrow_left_black"
+            android:layout_marginLeft="15pt"
+            />
+        <TextView
+            android:id="@id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="45pt"
+            android:gravity="center"
+            android:textSize="20pt"
+            android:textColor="@color/black"
+            android:text="纪念日"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="20pt"
+            android:layout_height="25pt"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30pt"
+            android:background="@drawable/addj"
+            android:id="@+id/jia"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无数据"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="230pt"
+            android:id="@+id/ts"
+            android:visibility="gone"
+            />
+        <!--    <com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:id="@+id/smarts"-->
+        <!--        >-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/jnrrecyc"
+            />
+        <!--    </com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+    </FrameLayout>
+</LinearLayout>

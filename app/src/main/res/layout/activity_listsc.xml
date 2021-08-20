@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_marginTop="10pt"
+        android:layout_width="44pt"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_left_black"
+        android:layout_centerVertical="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45pt"
+        android:layout_marginTop="1pt"
+        >
+
+
+        <RadioGroup
+            android:layout_width="220pt"
+            android:layout_height="30pt"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:id="@+id/redios">
+            <RadioButton
+                android:id="@+id/redio1"
+                android:layout_width="wrap_content"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textSize="20pt"
+                android:button="@null"
+                android:text="育儿文章"
+                android:textColor="@color/text_selecter"
+                android:gravity="center"
+
+                />
+            <View
+                android:layout_width="1pt"
+                android:layout_height="26pt"
+                android:background="#707070"
+                />
+            <RadioButton
+                android:id="@+id/redio2"
+                android:layout_width="wrap_content"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textSize="20pt"
+                android:gravity="center"
+                android:text="育儿视频"
+                android:textColor="@color/text_selecter"
+
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <com.xzq.module_base.views.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

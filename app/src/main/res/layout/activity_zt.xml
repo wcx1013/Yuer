@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f9f9f9"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45pt"
+        android:id="@+id/bars"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@mipmap/ic_arrow_left_black"
+
+        >
+        <TextView
+            android:text="宝宝状态"
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20pt" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择宝宝的性别或孕期"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27pt"
+        android:textSize="14pt"
+        android:textColor="#272727"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="137pt"
+        android:orientation="horizontal"
+        android:layout_marginTop="24pt"
+        >
+        <LinearLayout
+            android:id="@+id/nv"
+            android:background="@drawable/tankuang"
+            android:layout_width="104pt"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10pt"
+            >
+            <ImageView
+                android:layout_width="65pt"
+                android:layout_height="65pt"
+                android:background="@drawable/nvbaobao"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26pt"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女孩"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#272727"
+                android:textSize="15pt"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nan"
+            android:layout_marginLeft="14pt"
+            android:background="@drawable/tankuang"
+            android:layout_width="104pt"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="65pt"
+                android:layout_height="65pt"
+                android:background="@drawable/nanbaobao"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26pt"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男孩"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#272727"
+                android:textSize="15pt"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/yun"
+            android:layout_marginRight="10pt"
+            android:layout_marginLeft="14pt"
+            android:background="@drawable/tankuang"
+            android:layout_width="104pt"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="65pt"
+                android:layout_height="65pt"
+                android:background="@drawable/naizui"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26pt"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="孕期"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#272727"
+                android:textSize="15pt"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

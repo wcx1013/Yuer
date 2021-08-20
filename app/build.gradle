@@ -1,0 +1,173 @@
+apply plugin: 'com.android.application'
+
+// Create a variable called keystorePropertiesFile, and initialize it to your
+// keystore.properties file, in the rootProject folder.
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+// Initialize a new Properties() object called keystoreProperties.
+def keystoreProperties = new Properties()
+// Load your keystore.properties file into the keystoreProperties object.
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+static def releaseTime() {
+    return new Date().format("yyyyMMdd")
+}
+
+android {
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.yd.ye"
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 1
+        versionName "1.0.0"
+        flavorDimensions "versionCode"//版本名后面添加一句话，意思就是flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+        //arouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86'
+        }
+        multiDexEnabled true
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            // 缩减resource文件
+            shrinkResources false
+            //Proguard
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+            debuggable false
+        }
+
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            //签名
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            //这里修改apk文件名
+            def fileName = "dengteng" +
+                    "-vc${defaultConfig.versionCode}" +
+                    "-vn${defaultConfig.versionName}" +
+                    "-${releaseTime()}" +
+                    "-${buildType.name}.apk"
+            outputFileName = fileName
+        }
+    }
+
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    productFlavors {
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
+        }
+        vivo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vivo"]
+        }
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
+        }
+        meizu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"]
+        }
+        sanxing {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sanxing"]
+        }
+        yingyongbao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+        }
+        none {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "none"]
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            // 输出apk名称为WeiLaiCheng1.0_2018-08-13.apk
+            def fileName = "${defaultConfig.applicationId}_${variant.productFlavors[0].name}_${defaultConfig.versionName}.apk"
+            outputFileName = fileName
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':module_common')
+    implementation project(path: ':pictureLibrary')
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation files('libs\\umeng-common-9.1.3.jar')
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.arouterCompiler"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknife"
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.ext.glideVersion"
+    implementation 'com.jpeng:JPTabBar:1.4.0'
+
+    //banner
+    api 'com.youth.banner:banner:1.4.10'
+
+    //图片选择库
+    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.8'
+
+    api 'com.zhy.base:fileprovider:1.0.0'
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.nex3z:flow-layout:1.3.1'
+    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'//下拉回弹
+
+    compile(name: 'open_ad_sdk', ext: 'aar')
+    // 穿山甲广告接入
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+    implementation 'com.zhihu.android:matisse:0.5.1'
+   // mplementation 'com.lcw.library:imagepicker:2.2.7'
+
+    //气泡弹窗
+    implementation 'me.kareluo.ui:popmenu:1.1.0'
+
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+
+    api 'me.shaohui:bottomdialog:1.1.9'
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+
+
+
+    // 友盟
+    implementation files('libs/umeng-asms-armeabi-v1.1.3.aar')
+    implementation files('libs/umeng-crash-armeabi-v0.0.4.aar')
+
+//60dec3d826a57f1018442690
+
+}

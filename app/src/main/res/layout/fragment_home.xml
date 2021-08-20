@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wx">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="444pt"
+        android:background="@drawable/shoutu"
+        android:id="@+id/bj"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+
+            <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/overscroll"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="459pt"
+                        android:layout_marginTop="286pt"
+                        android:background="@drawable/shouxia" />
+
+                    <ImageView
+                        android:id="@+id/tx"
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:layout_marginLeft="24pt"
+                        android:layout_marginTop="203pt"
+                        android:background="@drawable/tuoyuan" />
+
+                    <TextView
+                        android:id="@+id/yunqi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16pt"
+                        android:layout_marginTop="203pt"
+                        android:layout_toRightOf="@id/tx"
+                        android:text="孕22周4天"
+                        android:textColor="@color/white"
+                        android:textSize="19pt" />
+
+                    <TextView
+                        android:id="@+id/juchan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/yunqi"
+                        android:layout_marginLeft="16pt"
+                        android:layout_marginTop="8pt"
+                        android:layout_toRightOf="@id/tx"
+                        android:text="距离预产期122天"
+                        android:textColor="@color/white"
+                        android:textSize="13pt" />
+
+                    <RelativeLayout
+                        android:id="@+id/xiangce"
+                        android:layout_width="315pt"
+                        android:layout_height="78pt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="23pt"
+                        android:layout_marginTop="327pt"
+                        android:layout_marginRight="23pt"
+                        android:background="@drawable/lvbei">
+
+                        <ImageView
+                            android:id="@+id/wq"
+                            android:layout_width="36pt"
+                            android:layout_height="36pt"
+                            android:layout_marginLeft="16pt"
+                            android:layout_marginTop="22pt"
+                            android:background="@drawable/shu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13pt"
+                            android:layout_marginTop="22pt"
+                            android:layout_toRightOf="@+id/wq"
+                            android:text="宝宝相册"
+                            android:textColor="@color/color_272727"
+                            android:textSize="14pt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13pt"
+                            android:layout_marginTop="42pt"
+                            android:layout_toRightOf="@+id/wq"
+                            android:text="记录宝宝成长的每个瞬间"
+                            android:textColor="@color/color_797777"
+                            android:textSize="12pt" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/riji"
+                        android:layout_width="315pt"
+                        android:layout_height="78pt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="23pt"
+                        android:layout_marginTop="424pt"
+                        android:layout_marginRight="23pt"
+                        android:background="@drawable/zibei">
+
+                        <ImageView
+                            android:id="@+id/wq1"
+                            android:layout_width="36pt"
+                            android:layout_height="36pt"
+                            android:layout_marginLeft="16pt"
+                            android:layout_marginTop="22pt"
+                            android:background="@drawable/bao" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13pt"
+                            android:layout_marginTop="22pt"
+                            android:layout_toRightOf="@+id/wq1"
+                            android:text="大事日记"
+                            android:textColor="@color/color_272727"
+                            android:textSize="14pt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13pt"
+                            android:layout_marginTop="42pt"
+                            android:layout_toRightOf="@+id/wq1"
+                            android:text="纪念人生中最重要的日子"
+                            android:textColor="@color/color_797777"
+                            android:textSize="12pt" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/jilu"
+                        android:layout_width="315pt"
+                        android:layout_height="78pt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="23pt"
+                        android:layout_marginTop="515pt"
+                        android:layout_marginRight="23pt"
+                        android:background="@drawable/zibei">
+
+                        <ImageView
+                            android:id="@+id/wq2"
+                            android:layout_width="36pt"
+                            android:layout_height="36pt"
+                            android:layout_marginLeft="16pt"
+                            android:layout_marginTop="22pt"
+                            android:background="@drawable/cheng" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13pt"
+                            android:layout_marginTop="22pt"
+                            android:layout_toRightOf="@+id/wq2"
+                            android:text="体重记录"
+                            android:textColor="@color/color_272727"
+                            android:textSize="14pt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13pt"
+                            android:layout_marginTop="42pt"
+                            android:layout_toRightOf="@+id/wq2"
+                            android:text="关注妈妈的体重健康情况"
+                            android:textColor="@color/color_797777"
+                            android:textSize="12pt" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/taijiao"
+                        android:layout_width="315pt"
+                        android:layout_height="78pt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="23pt"
+                        android:layout_marginTop="609pt"
+                        android:layout_marginRight="23pt"
+                        android:background="@drawable/chengbei">
+
+                        <ImageView
+                            android:id="@+id/wq3"
+                            android:layout_width="36pt"
+                            android:layout_height="36pt"
+                            android:layout_marginLeft="16pt"
+                            android:layout_marginTop="22pt"
+                            android:background="@drawable/da" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13pt"
+                            android:layout_marginTop="22pt"
+                            android:layout_toRightOf="@+id/wq3"
+                            android:text="每日胎教"
+                            android:textColor="@color/color_272727"
+                            android:textSize="14pt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13pt"
+                            android:layout_marginTop="42pt"
+                            android:layout_toRightOf="@+id/wq3"
+                            android:text="让孩子更好的迎接世界"
+                            android:textColor="@color/color_797777"
+                            android:textSize="12pt" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+            <com.xzq.module_base.views.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableTop="@drawable/xiaolian"
+                app:dtv_drawableWidth="23pt"
+                app:dtv_drawableHeight="23pt"
+                android:text="状态"
+                android:paddingTop="5pt"
+                android:textColor="@color/white"
+                android:textSize="10pt"
+                android:layout_marginTop="38pt"
+                android:layout_marginRight="20pt"
+                android:id="@+id/zhuangtai"
+                />
+            <com.xzq.module_base.views.DrawableTextView
+                android:id="@+id/beijing"
+                android:layout_below="@id/zhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableTop="@drawable/beijing"
+                app:dtv_drawableWidth="23pt"
+                app:dtv_drawableHeight="23pt"
+                android:text="背景"
+                android:paddingTop="5pt"
+                android:textColor="@color/white"
+                android:textSize="10pt"
+                android:layout_marginTop="14pt"
+                android:layout_marginRight="20pt"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <com.xzq.module_base.views.MyVideoPlayer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/jz_video"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <ImageView
+            android:id="@+id/iv_back"
+            android:paddingStart="18pt"
+            android:src="@drawable/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="44pt"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="13pt"
+        android:layout_marginBottom="264pt"
+        >
+
+
+        <ImageView
+            android:id="@+id/shou"
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:background="@drawable/wsc"
+
+            />
+        <ImageView
+            android:id="@+id/shous"
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:background="@drawable/ysc"
+            android:visibility="gone"
+
+            />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#80000000">
+    <LinearLayout
+
+
+        android:layout_width="250pt"
+        android:layout_height="150pt"
+        android:background="@drawable/tankuang"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否删除？"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40pt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40pt"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:text="再想想"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/zaixiangxiang"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:text="去意已决"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/tongyi"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

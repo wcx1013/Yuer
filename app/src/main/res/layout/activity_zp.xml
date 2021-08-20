@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45pt"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/fan"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:background="@drawable/ic_arrow_left_black"
+            android:layout_marginLeft="15pt"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="45pt"
+            android:gravity="center"
+            android:textSize="20pt"
+            android:textColor="@color/black"
+            android:text="添加照片"
+            />
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="340pt"
+        android:layout_height="wrap_content"
+        android:id="@+id/zplist"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="110pt"
+        android:layout_height="40pt"
+        android:text="确定"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:background="@drawable/qdhui"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="330pt"
+        android:id="@+id/hui"
+        />
+    <TextView
+        android:layout_width="110pt"
+        android:layout_height="40pt"
+        android:text="确定"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:background="@drawable/fen"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="330pt"
+        android:id="@+id/fen"
+        android:visibility="gone"
+        />
+</LinearLayout>

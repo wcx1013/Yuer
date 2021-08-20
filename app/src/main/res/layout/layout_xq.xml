@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45pt"
+        android:id="@+id/bars"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@mipmap/ic_arrow_left_black"
+
+        >
+        <TextView
+            android:text="文章详情"
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20pt" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            >
+
+
+            <ImageView
+                android:id="@+id/shou"
+                android:layout_width="15pt"
+                android:layout_height="15pt"
+                android:background="@drawable/wsc"
+
+                />
+            <ImageView
+                android:id="@+id/shous"
+                android:layout_width="15pt"
+                android:layout_height="15pt"
+                android:background="@drawable/ysc"
+                android:visibility="gone"
+
+                />
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web"
+        />
+</LinearLayout>

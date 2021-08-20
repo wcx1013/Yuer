@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14pt"
+    android:layout_marginBottom="14pt"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="116pt"
+        android:layout_height="77pt"
+        android:id="@+id/im"
+        android:layout_marginLeft="29pt"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/nr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2C2C2C"
+        android:textSize="13pt"
+        android:text="的合格的我的读后感"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15pt"
+        />
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45pt"
+        android:id="@+id/bars"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@mipmap/ic_arrow_left_black"
+
+        >
+        <TextView
+            android:text="宝宝状态"
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20pt" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="63pt"
+        android:layout_height="63pt"
+        android:background="@drawable/tuoyuan"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23pt"
+        android:id="@+id/xxc"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="28pt"
+            android:layout_height="28pt"
+            android:background="@drawable/shuru"
+            android:layout_marginTop="14pt"
+            android:layout_marginLeft="30pt"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入宝宝名字"
+            android:layout_marginTop="18pt"
+            android:background="@null"
+            android:layout_marginLeft="8pt"
+            android:id="@+id/nr"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1pt"
+        android:background="@color/translucent_white_20"
+        android:layout_marginTop="16pt"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="28pt"
+            android:layout_height="28pt"
+            android:background="@drawable/sj"
+            android:layout_marginTop="14pt"
+            android:layout_marginLeft="30pt"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请输入宝宝的出生日期"
+            android:layout_marginTop="18pt"
+            android:background="@null"
+            android:layout_marginLeft="8pt"
+            android:id="@+id/time"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/qued"
+        android:layout_width="121pt"
+        android:layout_height="33pt"
+        android:background="@drawable/queding"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="298pt"
+        />
+</LinearLayout>

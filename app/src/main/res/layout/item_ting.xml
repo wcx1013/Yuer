@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="9pt">
+    <ImageView
+        android:layout_width="96pt"
+        android:layout_height="96pt"
+        android:scaleType="fitXY"
+        android:id="@+id/imas"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:textColor="#313131"
+        android:layout_marginTop="8pt"
+        android:id="@+id/tva"
+        />
+</LinearLayout>

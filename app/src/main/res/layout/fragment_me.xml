@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="186pt"
+    android:background="@drawable/metop"
+    />
+
+<!--<com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout-->
+<!--    android:id="@+id/over_scroll_view"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+
+<!--    >-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="507pt"
+        android:background="@drawable/mebotom"
+        android:layout_marginTop="147pt"
+
+        />
+    <ImageView
+        android:layout_width="100pt"
+        android:layout_height="100pt"
+        android:layout_marginTop="86pt"
+        android:background="@drawable/touxiang"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="imaitoome"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="193pt"
+        android:textSize="18pt"
+        android:textColor="#3C3C3C"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="219pt"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_fxhy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33pt"
+            android:layout_marginTop="30pt"
+            android:layout_marginEnd="33pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/shoucang"
+                android:drawablePadding="3pt"
+                android:gravity="center_vertical"
+                android:text="我的收藏"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="14pt" />
+
+            <ImageView
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_right_black" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_yszc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33pt"
+            android:layout_marginTop="39.5pt"
+            android:layout_marginEnd="33pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_yinsi"
+                android:drawablePadding="3pt"
+                android:gravity="center_vertical"
+                android:text="隐私政策"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="14pt" />
+
+            <ImageView
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_right_black" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_bzfk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33pt"
+            android:layout_marginTop="30pt"
+            android:layout_marginEnd="33pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/shanghaoping"
+                android:drawablePadding="3pt"
+                android:gravity="center_vertical"
+                android:text="联系客服"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="14pt" />
+
+            <ImageView
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_right_black" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_gywm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33pt"
+            android:layout_marginTop="30pt"
+            android:layout_marginEnd="33pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/guanyuus"
+                android:drawablePadding="3pt"
+                android:gravity="center_vertical"
+                android:text="关于我们"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="14pt" />
+
+            <ImageView
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_right_black" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_gwhp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33pt"
+            android:layout_marginTop="30pt"
+            android:layout_marginEnd="33pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_haoping"
+                android:drawablePadding="3pt"
+                android:gravity="center_vertical"
+                android:text="给我好评"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="14pt" />
+
+            <ImageView
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_right_black" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/yonghuxieyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33pt"
+            android:layout_marginTop="30pt"
+            android:layout_marginEnd="33pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/yhxy"
+                android:drawablePadding="3pt"
+                android:gravity="center_vertical"
+                android:text="用户协议"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="14pt" />
+
+            <ImageView
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_right_black" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tcdl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginStart="33pt"
+            android:layout_marginTop="30pt"
+            android:layout_marginEnd="33pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3pt"
+                android:text="退出登录"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="14pt" />
+
+            <ImageView
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_right_black" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_bbgx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33pt"
+            android:layout_marginTop="30pt"
+            android:layout_marginEnd="33pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/gengxin"
+                android:drawablePadding="3pt"
+                android:gravity="center_vertical"
+                android:text="检查更新"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="14pt" />
+
+            <ImageView
+                android:id="@+id/img_gx_r"
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_right_black" />
+
+            <TextView
+                android:id="@+id/tv_vesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5pt"
+                android:layout_toStartOf="@id/img_gx_r"
+                android:text="V1.0.0"
+                android:textColor="@color/color_1A1A1A"
+                android:textSize="10pt" />
+        </RelativeLayout>
+    </LinearLayout>
+    </FrameLayout>
+<!--</com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>-->
+</FrameLayout>
